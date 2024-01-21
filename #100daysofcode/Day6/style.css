@@ -1,0 +1,54 @@
+html{
+    height: 100%;
+}
+body {
+    background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:luminosity;
+    width: 100%;
+    background-color: rgba(240, 248, 255,0.1);
+}
+form {
+    margin: 1em auto;
+    /* text-align: center; */
+    background-color: aqua;
+    max-width: 500px;
+    min-width: 200px;
+    /* opacity: 1; */
+}
+label{
+    margin: auto;
+    display: block;
+    text-align: left;
+    
+}
+fieldset{
+    border: none;
+}
+input,textarea,select{
+    margin: 10px auto;
+    padding: 2px 0;
+    width: 100%;
+    /* text-align: right; */
+    max-width: 500px;
+    border: none;
+}
+input,select{
+    height: 2em;
+}
+.inline{width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;}
+
+.btn{
+    width: unset;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+}
+.bttn{
+   text-align: center;
+}

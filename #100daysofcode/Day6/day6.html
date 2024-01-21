@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    
+    <form id="survey-form" method="post">
+        <h1 id="title">Interview Questionnaire</h1>
+    <p id="description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime tempore,
+        reiciendis alias repellendus molestiae laboriosam ab provident totam
+        numquam aspernatur fuga! Odio minus corporis iure?
+    </p>
+        <label id="name-label" for="name-label">
+            Full Name :
+            <input required type="text" placeholder="Enter Name" id="name" />
+        </label>
+        <label id="email-label"  for="email-label">E-mail :
+            <input type="email" name="email" id="email" placeholder="Enter E-Mail" required /></label>
+        <label id="number-label"  for="number-label">Number :
+            <input type="number" name="number" min="1111111111" max="9999999999" placeholder="Enter Phone Number" id="number" /></label>
+        <label for="number">Age :
+            <input type="number" name="number" id="age" placeholder="Enter Age" min="16" max="100" /></label>
+        <label for="gender">Gender : </label>
+        <select name="dropdown" id="dropdown">
+            <option value="Select One">Select One</option>
+            <option value="Rather not to say">Rather not to say</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <fieldset>
+            <label for="smoke">Do You Smoke ?</label>
+            <label for="radio">
+                <input type="radio" class="inline" value="smoke" name="smoke" id="smoke" checked /> Yes
+                <input type="radio" class="inline" value="smoke" name="smoke" id="smoke" /> No</label>
+        </fieldset>
+        <label  for="checkbox">
+            <input class="inline" type="checkbox" name="1" id="1" value="one">Do you support?
+            <input class="inline" type="checkbox" name="1" id="2" value="two"> Are you going to quit?
+            <input class="inline" type="checkbox" name="1" id="3" value="three">Never Smoke
+        </label>
+        <label for="textarea">
+            <textarea name="Additional-Info" id="information" cols="40" rows="5"
+                placeholder="Please Provide your thoughts on smoking"></textarea>
+        </label>
+        <label class="bttn"  for="submit"><input class="btn" type="button" id="reset" value="Reset" />
+        <input class="btn" type="submit" id="submit" value="Submit" /></label>
+    </form>
+</body>
+
