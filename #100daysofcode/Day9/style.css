@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FBFBFF;
+}
+h2, h1{
+    color:#01BAEF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+}
+button , input[type=submit]{
+    border: 0;
+    color: #FBFBFF;
+    background-color: #20BF55;
+    padding: 10px;
+    border-radius: 5px;
+}
+p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navbar */
+
+li,a{
+    font-size: 18px;
+    color: #122C34;
+    text-decoration: none;
+}
+.logo{
+    margin-right: auto;
+    height: auto;
+    width: 160px;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px ;
+    width: 100%;
+}
+.navbar{
+    list-style: none;
+}
+.navbar , li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.drop{
+    display: none;
+}
+.navbar li:hover .drop{
+    background-color: #f5f7f8;
+    display: block;
+    position:absolute;
+    margin: 10px 0 0 -10px;
+}
+.navbar li:hover .drop ul{
+    display: block;
+    margin: 10px;
+}
+.navbar li:hover .drop ul li{
+    display: block;
+    margin: 10px;
+}
+
+
+/* Main-Content */
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    border-bottom: 2px solid black;
+    
+}
+
+.img-l , .content-r{
+    display: inline-block;
+    margin: auto;
+    margin: 20px;
+}
+
+.content-r{
+    justify-content: space-around;
+    height: auto;
+    text-align: left;
+}
+
+.title,.p1{
+    margin: 30px;
+}
+.btn{
+    margin: 0px 30px 30px 30px;
+}
+
+/* Card - Deck */
+
+.band {
+
+    margin: 40px;
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+      
+    &:hover {
+      top: -2px;
+      box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    }
+    
+    article {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    article h1 {
+      font-size: 20px;
+      margin: 0;
+      color:#01BAEF;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    article p {
+      flex: 1;
+      line-height: 1.4;
+    }
+    
+    span {
+      font-size: 12px;
+      font-weight: bold;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin: 2em 0 0 0;
+    }
+    
+    .thumb {
+      padding-bottom: 60%;
+      background-size: cover;
+      background-position: center center;
+    }
+    .feat-img{
+        height: 64px;
+        width: 64px;
+        margin: 5px auto;
+    }
+  }
+
+/* Gallery */
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Quote */
+
+.quote{
+   text-align: center; 
+   font-size: 30px;
+   margin: 30px;
+   font-family: 'Playfair Display', serif;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: #01BAEF;
+}
+.row{
+    margin: 30px;
+}
+.column {
+    color: aliceblue;
+    float: left;
+    width: 25%;
+    margin: 10px 0px;
+    padding: 5px 20px;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cd{
+    text-decoration: none;
+    color:#1764FF;
+}
+
+.link{
+    display: block;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #122C34;
+    margin: 5px 0;
+}
+
+.heading{
+    font-weight: 900;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    color: #122C34;
+
+}
+
+.det{
+    margin-top: 10px;
+}
+
+input[type=text],input[type=email]{
+    height: 35px;
+    border: 0;
+    margin: 10px;
+    color: bisque;
+    padding: 10px;
+    background-color: #122C34;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus{
+    outline: 2px solid #122C34;
+}
+
+input[type=submit]{
+    margin: 10px;
+    width: 100%;
+}
+
+h4{
+    margin-bottom: 10px;
+}
+
+.footer
+{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.copy{
+    padding: 10px;
+    background-color: #122C34;
+}
+.cr a{
+    color: #FBFBFF;
+
+}
+
+
+
+
+  
+
+  
