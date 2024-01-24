@@ -1,0 +1,50 @@
+form{
+    padding: 0% 20%;
+}
+.footer
+{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.copy{
+    padding: 10px;
+    background-color: #122C34;
+}
+.cr a{
+    color: #FBFBFF;
+    text-decoration: none;
+
+}
+
+.img-logo{
+    width: 50px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+.logo{
+    display: none;
+}
+.card-img-overlay:hover, .logo{
+    cursor: pointer;
+    opacity: 1;
+    display: block;
+    
+}
+.icon{
+    margin: 20%;
+    display: inline;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.nav-item:hover, .dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.fa-solid{
+    margin-top: 30%;
+}
